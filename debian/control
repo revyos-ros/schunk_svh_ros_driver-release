@@ -1,0 +1,12 @@
+Source: ros-humble-schunk-svh-tests
+Section: misc
+Priority: optional
+Maintainer: Stefan Scherzinger <scherzin@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-controller-manager-msgs <!nocheck>, ros-humble-launch <!nocheck>, ros-humble-launch-ros <!nocheck>, ros-humble-launch-testing-ament-cmake <!nocheck>, ros-humble-schunk-svh-driver <!nocheck>, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-schunk-svh-tests
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-ros-workspace
+Description: Integration tests for the Schunk SVH ROS2 driver
