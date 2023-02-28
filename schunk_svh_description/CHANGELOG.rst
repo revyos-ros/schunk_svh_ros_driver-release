@@ -2,14 +2,14 @@
 Changelog for package schunk_svh_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.0.1 (2023-01-02)
+2.1.1 (2023-01-02)
 ------------------
 * Unify version numbers
   The version convention is as follows:
   `0.1.x` for ROS1 Melodic and Noetic
   `2.0.x` for ROS2 Foxy
   `2.1.x` for ROS2 Humble
-  We start with `2.0.0` and bumb that with bloom to `2.0.1` for the first
+  We start with `2.1.0` and bumb that with bloom to `2.1.1` for the first
   release.
 * Update maintainer info
   Let's keep the list short for now.

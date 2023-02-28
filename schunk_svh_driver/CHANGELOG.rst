@@ -2,15 +2,22 @@
 Changelog for package schunk_svh_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.0.1 (2023-01-02)
+2.1.1 (2023-01-02)
 ------------------
 * Unify version numbers
   The version convention is as follows:
   `0.1.x` for ROS1 Melodic and Noetic
   `2.0.x` for ROS2 Foxy
   `2.1.x` for ROS2 Humble
-  We start with `2.0.0` and bumb that with bloom to `2.0.1` for the first
+  We start with `2.1.0` and bumb that with bloom to `2.1.1` for the first
   release.
+* Fix integration test
+* Fix compiler warnings
+* Adapt to ROS2-control's API changes
+  That's mostly a straight-forward mapping from the current interface
+  methods.  However, we don't make use of all of the new lifecycle-related
+  functionality yet.  See `#19 <https://github.com/fzi-forschungszentrum-informatik/schunk_svh_ros_driver/issues/19>`_.
+* Update dependencies
 * Add missing execution dependencies
   We need those for our current, minimal setup.
 * Update maintainer info
@@ -28,7 +35,7 @@ Changelog for package schunk_svh_driver
 * Add license text for the GPLv3
   The license text is from
   `here <https://www.gnu.org/licenses/gpl-3.0.txt>`_ after following the
-  recommendations from `here <https://www.gnu.org/licenses/gpl-howto.html>`_
+  recommendations from [here](https://www.gnu.org/licenses/gpl-howto.html)
 * Remove debug comment from launch file
 * Update the driver's sup package readme
 * Fix build warnings about unused parameters
