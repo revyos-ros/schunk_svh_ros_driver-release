@@ -1,0 +1,12 @@
+Source: ros-foxy-schunk-svh-tests
+Section: misc
+Priority: optional
+Maintainer: Stefan Scherzinger <scherzin@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-controller-manager-msgs <!nocheck>, ros-foxy-launch <!nocheck>, ros-foxy-launch-ros <!nocheck>, ros-foxy-launch-testing-ament-cmake <!nocheck>, ros-foxy-schunk-svh-driver <!nocheck>, ros-foxy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-foxy-schunk-svh-tests
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ros-workspace
+Description: Integration tests for the Schunk SVH ROS2 driver
