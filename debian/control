@@ -1,0 +1,12 @@
+Source: ros-humble-schunk-svh-driver
+Section: misc
+Priority: optional
+Maintainer: Stefan Scherzinger <scherzin@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-lint-auto <!nocheck>, ros-humble-hardware-interface, ros-humble-pluginlib, ros-humble-rclcpp, ros-humble-schunk-svh-library, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-schunk-svh-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-controller-manager, ros-humble-hardware-interface, ros-humble-joint-state-broadcaster, ros-humble-joint-trajectory-controller, ros-humble-launch, ros-humble-launch-ros, ros-humble-pluginlib, ros-humble-rclcpp, ros-humble-ros2launch, ros-humble-schunk-svh-description, ros-humble-schunk-svh-library, ros-humble-xacro, ros-humble-ros-workspace
+Description: ROS2-control system interface for the Schunk SVH
